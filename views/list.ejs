@@ -1,0 +1,28 @@
+<%- include("header") -%>
+  <div class="box" id="heading">
+
+    <h1>To Do List </h1>
+   
+  </div>
+  <div class="box">
+    <% for(var i=0;i<sleeps.length;i++){ %>
+<div class="item">
+  <input type="checkbox">
+  <p><%=sleeps[i]%></p>
+</div>
+ 
+  
+
+<% } %>
+
+
+
+
+
+<form class="item" action="/" method="post">
+  <input type="text" name="newItem" autofocus="autofocus" placeholder="New Stuff" autocomplete="off">
+  <button type="submit" name="button" >+</button>
+</form>
+  </div>
+
+  <%- include("footer") -%>
